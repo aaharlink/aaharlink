@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>CuisineConnect - Global Indian Restaurant Directory</title>
+    <meta name="description" content="Discover authentic Gujarati, Punjabi, and South Indian restaurants worldwide. Find the best Indian cuisine near you or anywhere in the world with CuisineConnect." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CuisineConnect - Global Indian Restaurant Directory" />
+    <meta property="og:description" content="Find authentic Gujarati, Punjabi, and South Indian restaurants anywhere in the world. Connect with flavors that feel like home." />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="CuisineConnect - Global Indian Restaurant Directory" />
+    <meta property="twitter:description" content="Find authentic Gujarati, Punjabi, and South Indian restaurants anywhere in the world." />
+    <meta property="twitter:image" content="/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CuisineConnect",
+      "description": "Global directory for authentic Gujarati, Punjabi, and South Indian restaurants worldwide",
+      "url": "https://cuisineconnect.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cuisineconnect.com/search?keyword={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>

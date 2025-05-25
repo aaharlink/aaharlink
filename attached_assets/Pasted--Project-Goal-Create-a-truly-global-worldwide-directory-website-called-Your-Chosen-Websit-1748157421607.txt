@@ -1,0 +1,65 @@
+**Project Goal:** Create a **truly global, worldwide directory website** called "[Your Chosen Website Name]" for anyone, anywhere in the world, to easily search and discover authentic Gujarati, Punjabi, and South Indian restaurants. The platform must be designed for a global audience from the outset, allowing users from any country to find restaurants in any other country, state, or city. The site will also allow restaurant owners from anywhere in the world to list their businesses. Monetization will initially be through Google AdSense, with potential for premium restaurant listings later.
+
+**Target Audiences:**
+1.  Individuals **across the globe** looking for Gujarati, Punjabi, or South Indian restaurants in their local area or in places they plan to visit **worldwide**.
+2.  Owners of Gujarati, Punjabi, or South Indian restaurants **anywhere in the world**.
+
+**Key Website Sections & Features:**
+
+1.  **Homepage:**
+    * Prominent global search section:
+        * Main search bar: "Find Restaurants" (for keywords).
+        * **Dedicated filter/dropdown for "Cuisine Type": Gujarati, Punjabi, South Indian.**
+        * **Mandatory Location fields: Country (dropdown or searchable list of all countries), then dynamically populated State/Region, and City.**
+    * Visually appealing design celebrating the global appeal of diverse Indian cuisines.
+    * Clear calls-to-action: "Search Restaurants Globally" and "List Your Restaurant (Worldwide)."
+    * Optional: Sections showcasing popular restaurants from various continents/countries for each cuisine type.
+
+2.  **Search Results Page:**
+    * Display listings in a clean list style and an integrated map view (e.g., Google Maps Embed API, ensuring global coverage).
+    * Each listing preview clearly shows: Restaurant Name, Cuisine Type(s), Full Address (including City, State/Region, Country), Average Google Rating, thumbnail image.
+    * **Filtering options (must support global data):**
+        * **Primary: Cuisine Type.**
+        * **Location: Country, State/Region, City.**
+        * Rating, price range, dietary options (vegetarian/non-vegetarian, Jain, etc.).
+    * Sorting options: by relevance, rating, cuisine type, newly added.
+
+3.  **Individual Restaurant Listing Page:**
+    * Full Restaurant Name.
+    * **Clearly displayed Cuisine Type(s) served.**
+    * **Complete International Address (structured for clarity, including Country).** Clickable to open in maps.
+    * Phone Number (with international dialing code consideration).
+    * Website Link.
+    * Opening Hours (consider time zone display if possible, or clearly state "local time").
+    * Photo gallery/carousel.
+    * Embedded Google Map showing precise global location.
+    * Prominent Google Rating.
+    * Section for "Specialties," "Menu Highlights," or "About this Restaurant."
+
+4.  **Restaurant Submission/Registration System (for Global Restaurant Owners):**
+    * Easy Signup/Login (accessible globally).
+    * **"Add Restaurant" Form (designed for international input):**
+        * Intuitive and comprehensive.
+        * **Mandatory "Cuisine Type(s) Served" field.**
+        * **Structured address fields suitable for international addresses: Country (dropdown), State/Region, City, Street Address, Postal Code.**
+        * Photo uploads.
+        * Map location pinning with global accuracy.
+    * **Restaurant Owner Dashboard (Simple):** View and manage their listed restaurant(s).
+
+5.  **Static Pages:** About Us, Contact Us, Privacy Policy, Terms of Service, How to Add Your Restaurant.
+
+**Design & User Experience (UX) Preferences:**
+* **Global First Design:** The entire UX/UI must feel international, not tied to any single country. This includes language considerations for labels if targeting specific non-English speaking regions in the future (though English is primary for now).
+* **UI:** Clean, modern, vibrant, professional, and culturally inclusive.
+* **Navigation:** Simple, with clear pathways for global search by cuisine and location.
+* **Mobile Responsiveness:** Essential for global users on various devices.
+* **Speed & Accessibility:** Optimized for fast loading worldwide and basic web accessibility.
+
+**Technical Considerations (for the AI tool to understand context):**
+* **Global Architecture:** The database and backend must be designed to efficiently store, query, and manage listings from all countries, supporting diverse international address formats and character sets if necessary.
+* **Location Services:** Robust integration with mapping services (like Google Maps API) for accurate global geocoding and map displays. Ensure API usage respects worldwide coverage.
+* Search functionality must efficiently handle queries across a global dataset.
+* Structure for Google AdSense integration (considering global ad targeting).
+* SEO-friendly design, with strategies for ranking in different countries/regions.
+
+**Main Call to Action:** "Find authentic Gujarati, Punjabi, and South Indian restaurants anywhere in the world!" and "Restaurant Owners Worldwide: Showcase your cuisine to a global audience by listing with us!"

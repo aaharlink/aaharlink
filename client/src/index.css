@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 210 22% 22%; /* #334155 - slate gray */
+  --muted: 210 40% 98%;
+  --muted-foreground: 215 16% 47%; /* #64748B - cool gray */
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 22% 22%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 22% 22%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 25 95% 53%; /* #D97706 - saffron */
+  --primary-foreground: 355 100% 97%;
+  --secondary: 210 40% 98%;
+  --secondary-foreground: 222 47% 11%;
+  --accent: 210 40% 98%;
+  --accent-foreground: 222 47% 11%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 25 95% 53%;
+  --radius: 0.75rem;
+  
+  /* Indian cuisine colors - fixed */
+  --saffron: 25 95% 53%; /* #D97706 */
+  --indian-red: 0 84% 60%; /* #DC2626 */
+  --fresh-green: 158 64% 52%; /* #059669 */
+  --royal-purple: 258 90% 66%; /* #7C3AED */
+  --warm-gray: 220 9% 46%; /* #6B7280 */
+  --charcoal: 31 14% 25%; /* #1F2937 */
+}
+
+.dark {
+  --background: 240 10% 4%;
+  --foreground: 0 0% 98%;
+  --muted: 240 4% 16%;
+  --muted-foreground: 240 5% 65%;
+  --popover: 240 10% 4%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 4%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 4% 16%;
+  --input: 240 4% 16%;
+  --primary: 25 95% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 240 4% 16%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 4% 16%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 5% 84%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+  }
+  
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-saffron {
+    color: hsl(var(--saffron));
+  }
+  
+  .text-saffron-light {
+    color: hsl(var(--saffron-light));
+  }
+  
+  .text-indian-red {
+    color: hsl(var(--indian-red));
+  }
+  
+  .text-fresh-green {
+    color: hsl(var(--fresh-green));
+  }
+  
+  .text-royal-purple {
+    color: hsl(var(--royal-purple));
+  }
+  
+  .text-warm-gray {
+    color: hsl(var(--warm-gray));
+  }
+  
+  .text-charcoal {
+    color: hsl(var(--charcoal));
+  }
+  
+  .bg-saffron {
+    background-color: hsl(var(--saffron));
+  }
+  
+  .bg-saffron-light {
+    background-color: hsl(var(--saffron-light));
+  }
+  
+  .bg-indian-red {
+    background-color: hsl(var(--indian-red));
+  }
+  
+  .bg-fresh-green {
+    background-color: hsl(var(--fresh-green));
+  }
+  
+  .bg-royal-purple {
+    background-color: hsl(var(--royal-purple));
+  }
+  
+  .bg-warm-gray {
+    background-color: hsl(var(--warm-gray));
+  }
+  
+  .bg-charcoal {
+    background-color: hsl(var(--charcoal));
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--saffron)) 0%, hsl(var(--indian-red)) 50%, hsl(var(--royal-purple)) 100%);
+  }
+  
+  .cuisine-card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .cuisine-card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .search-form-shadow {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+}
