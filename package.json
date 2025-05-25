@@ -1,16 +1,19 @@
 {
   "name": "aaharlink",
   "version": "1.0.0",
-  "description": "Global Indian Restaurant Directory",
-  "main": "index.js",
+  "description": "Global Indian Restaurant Directory - Complete with 817 Authentic Restaurants",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": "18.x"
   }
 }
